@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport"content="width=device-width, initial scale=1.0">
+        <title>Submitted</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="style-menu.css">
+</head>
+<body>
+
+
+
+<script>
+    const resultsList = document.getElementById('results')
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+    resultsList.append(`${email}: ${comment}`)
+    resultsList.append(document.createElement('br'))
+    })
+</script>
+
+    <div class='topnav'>
+        <a href='index.html'>                   Home</a>
+        <a href='faq.html'>                     FAQ</a>
+        <a href='about.html'>                   About</a>
+<div class='header' style='background-image:url(Images/FAQbg.jpg)'>
+<h1>Thank you!</h1>
+Your comment is successfully delivered to us, we'll do our best to help you.
+<br><br>
+<div><a href='faq.html'style='border:1px solid white'>back</a></div>
+
+
+</div>
+
+</body>
+</html>
